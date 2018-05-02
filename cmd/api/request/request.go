@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/ribice/gorsk/internal/errors"
+	"github.com/ribice/gorsk-gin/internal/errors"
 
 	"github.com/gin-gonic/gin"
 )

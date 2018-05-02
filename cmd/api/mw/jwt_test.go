@@ -8,13 +8,13 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/ribice/gorsk/internal"
+	"github.com/ribice/gorsk-gin/internal"
 
-	"github.com/ribice/gorsk/cmd/api/config"
-	"github.com/ribice/gorsk/internal/mock"
+	"github.com/ribice/gorsk-gin/cmd/api/config"
+	"github.com/ribice/gorsk-gin/internal/mock"
 
 	"github.com/gin-gonic/gin"
-	"github.com/ribice/gorsk/cmd/api/mw"
+	"github.com/ribice/gorsk-gin/cmd/api/mw"
 )
 
 func hwHandler(c *gin.Context) {

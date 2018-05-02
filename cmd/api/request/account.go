@@ -4,9 +4,9 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/ribice/gorsk/internal"
+	"github.com/ribice/gorsk-gin/internal"
 
-	"github.com/ribice/gorsk/internal/errors"
+	"github.com/ribice/gorsk-gin/internal/errors"
 )
 
 // Register contains registration request

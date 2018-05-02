@@ -3,11 +3,11 @@ package pgsql_test
 import (
 	"testing"
 
-	"github.com/ribice/gorsk/internal/mock"
-	"github.com/ribice/gorsk/internal/platform/postgres"
+	"github.com/ribice/gorsk-gin/internal/mock"
+	"github.com/ribice/gorsk-gin/internal/platform/postgres"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/ribice/gorsk/internal"
+	"github.com/ribice/gorsk-gin/internal"
 
 	"github.com/go-pg/pg"
 	"go.uber.org/zap"

@@ -3,9 +3,9 @@ package query_test
 import (
 	"testing"
 
-	"github.com/ribice/gorsk/internal"
-	"github.com/ribice/gorsk/internal/errors"
-	"github.com/ribice/gorsk/internal/platform/query"
+	"github.com/ribice/gorsk-gin/internal"
+	"github.com/ribice/gorsk-gin/internal/errors"
+	"github.com/ribice/gorsk-gin/internal/platform/query"
 	"github.com/stretchr/testify/assert"
 )
 

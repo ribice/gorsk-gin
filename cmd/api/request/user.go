@@ -2,7 +2,7 @@ package request
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/ribice/gorsk/internal/errors"
+	"github.com/ribice/gorsk-gin/internal/errors"
 )
 
 // UpdateUser contains user update data from json request

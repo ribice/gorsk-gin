@@ -9,7 +9,7 @@ import (
 	"github.com/stretchr/testify/assert"
 
 	"github.com/gin-gonic/gin"
-	"github.com/ribice/gorsk/cmd/api/request"
+	"github.com/ribice/gorsk-gin/cmd/api/request"
 )
 
 func TestAccountCreate(t *testing.T) {

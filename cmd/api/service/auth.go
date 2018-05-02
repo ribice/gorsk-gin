@@ -3,12 +3,12 @@ package service
 import (
 	"net/http"
 
-	"github.com/ribice/gorsk/internal/errors"
+	"github.com/ribice/gorsk-gin/internal/errors"
 
-	"github.com/ribice/gorsk/cmd/api/request"
+	"github.com/ribice/gorsk-gin/cmd/api/request"
 
 	"github.com/gin-gonic/gin"
-	"github.com/ribice/gorsk/internal/auth"
+	"github.com/ribice/gorsk-gin/internal/auth"
 )
 
 // Auth represents auth http service

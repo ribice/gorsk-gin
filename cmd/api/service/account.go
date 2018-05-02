@@ -3,12 +3,12 @@ package service
 import (
 	"net/http"
 
-	"github.com/ribice/gorsk/internal"
+	"github.com/ribice/gorsk-gin/internal"
 
-	"github.com/ribice/gorsk/internal/account"
-	"github.com/ribice/gorsk/internal/errors"
+	"github.com/ribice/gorsk-gin/internal/account"
+	"github.com/ribice/gorsk-gin/internal/errors"
 
-	"github.com/ribice/gorsk/cmd/api/request"
+	"github.com/ribice/gorsk-gin/cmd/api/request"
 
 	"github.com/gin-gonic/gin"
 )
