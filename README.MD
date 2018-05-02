@@ -1,11 +1,13 @@
 # GORSK - GO(lang) Restful Starter Kit
 
-[![Build Status](https://travis-ci.org/ribice/gorsk.svg?branch=master)](https://travis-ci.org/ribice/gorsk)
-[![codecov](https://codecov.io/gh/ribice/gorsk/branch/master/graph/badge.svg)](https://codecov.io/gh/ribice/gorsk)
-[![Go Report Card](https://goreportcard.com/badge/github.com/ribice/gorsk)](https://goreportcard.com/report/github.com/ribice/gorsk)
-[![Maintainability](https://api.codeclimate.com/v1/badges/c3cb09dbc0bc43186464/maintainability)](https://codeclimate.com/github/ribice/gorsk/maintainability)
+[![Build Status](https://travis-ci.org/ribice/gorsk-gin.svg?branch=master)](https://travis-ci.org/ribice/gorsk-gin)
+[![codecov](https://codecov.io/gh/ribice/gorsk-gin/branch/master/graph/badge.svg)](https://codecov.io/gh/ribice/gorsk-gin)
+[![Go Report Card](https://goreportcard.com/badge/github.com/ribice/gorsk-gin)](https://goreportcard.com/report/github.com/ribice/gorsk-gin)
+[![Maintainability](https://api.codeclimate.com/v1/badges/c3cb09dbc0bc43186464/maintainability)](https://codeclimate.com/github/ribice/gorsk-gin/maintainability)
 
-Gorsk is a Golang starter kit for developing RESTful services. It is designed to help you kickstart your project, skipping the 'setting-up part' and jumping straight to writing business logic.
+Gorsk-Gin is a Golang starter kit for developing RESTful services, using Gin framework. I developed [Gorsk](https://github/com/ribice/gorsk) originally using Gin, but later moved it to Echo. This repository will be maintained with smaller changes done on Gorsk.
+
+ It is designed to help you kickstart your project, skipping the 'setting-up part' and jumping straight to writing business logic.
 
 Gorsk follows SOLID principles, with package design being inspired by Ben Johnson's [Standard Package Layout](https://medium.com/@benbjohnson/standard-package-layout-7cdbc8391fc1). The idea for building this project and its readme structure was inspired by [this](https://github.com/qiangxue/golang-restful-starter-kit).
 
