@@ -1,0 +1,9 @@
+db:
+  log: true
+  createschema: false
+
+server:
+  port: 8080
+
+jwt:
+  duration: 10800

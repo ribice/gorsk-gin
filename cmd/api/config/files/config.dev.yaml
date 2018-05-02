@@ -1,0 +1,13 @@
+db:
+  psn: "postgres://biadpozi:3_Czbl7jSjkUEWk--VP8QXMke-mFnczq@horton.elephantsql.com:5432/biadpozi"
+  log: true
+  createschema: false
+
+server:
+  port: 8080
+
+jwt:
+  realm: "jwtrealm" # Change this value
+  secret: "jwtsecret" # Change this value
+  duration: 15
+  signingalgorithm: "HS256"
