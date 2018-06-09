@@ -32,7 +32,6 @@
 package main
 
 import (
-	"io/ioutil"
 	"log"
 
 	"github.com/gin-contrib/cors"
@@ -78,20 +77,15 @@ func addV1Services(cfg *config.Configuration, r *gin.Engine, db *pg.DB, log *zap
 
 	rbacSvc := rbac.New(userDB)
 
+	r.Static("/swaggerui/", "cmd/api/swaggerui")
+
 	v1Router := r.Group("/v1")
-	v1Router.GET("/swagger", docHandler)
 	v1Router.Use(jwt.MWFunc())
 
 	accDB := pgsql.NewAccountDB(db, log)
 	service.NewAccount(account.New(accDB, userDB, rbacSvc), v1Router)
 
 	service.NewUser(user.New(userDB, rbacSvc, authSvc), v1Router)
-}
-
-func docHandler(c *gin.Context) {
-	c.Header("Content-Type", "application/json")
-	data, _ := ioutil.ReadFile("./cmd/api/swagger.json")
-	c.Writer.Write(data)
 }
 
 func checkErr(err error) {
