@@ -14,7 +14,7 @@ type Credentials struct {
 // Login validates login request
 func Login(c *gin.Context) (*Credentials, error) {
 	cred := new(Credentials)
-	if err := c.ShouldBindJSON(cred); err != nil {
+	if err := c.BindJSON(cred); err != nil {
 		apperr.Response(c, err)
 		return nil, err
 	}

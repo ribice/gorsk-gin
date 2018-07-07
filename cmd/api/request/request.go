@@ -22,7 +22,7 @@ type Pagination struct {
 // Paginate validates pagination requests
 func Paginate(c *gin.Context) (*Pagination, error) {
 	p := new(Pagination)
-	if err := c.ShouldBindQuery(p); err != nil {
+	if err := c.Bind(p); err != nil {
 		apperr.Response(c, err)
 		return nil, err
 	}
