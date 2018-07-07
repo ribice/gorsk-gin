@@ -26,7 +26,7 @@ type Register struct {
 // AccountCreate validates account creation request
 func AccountCreate(c *gin.Context) (*Register, error) {
 	var r Register
-	if err := c.ShouldBindJSON(&r); err != nil {
+	if err := c.BindJSON(&r); err != nil {
 		apperr.Response(c, err)
 		return nil, err
 	}
@@ -57,7 +57,7 @@ func PasswordChange(c *gin.Context) (*Password, error) {
 	if err != nil {
 		return nil, err
 	}
-	if err := c.ShouldBindJSON(&p); err != nil {
+	if err := c.BindJSON(&p); err != nil {
 		apperr.Response(c, err)
 		return nil, err
 	}

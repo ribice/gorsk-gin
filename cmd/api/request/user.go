@@ -22,7 +22,7 @@ func UserUpdate(c *gin.Context) (*UpdateUser, error) {
 	if err != nil {
 		return nil, err
 	}
-	if err := c.ShouldBindJSON(&u); err != nil {
+	if err := c.BindJSON(&u); err != nil {
 		apperr.Response(c, err)
 		return nil, err
 	}

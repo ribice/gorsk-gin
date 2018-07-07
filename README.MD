@@ -7,7 +7,7 @@
 
 Gorsk-Gin is a Golang starter kit for developing RESTful services, using Gin framework. I developed [Gorsk](https://github/com/ribice/gorsk) originally using Gin, but later moved it to Echo. This repository will be maintained with smaller changes done on Gorsk.
 
- It is designed to help you kickstart your project, skipping the 'setting-up part' and jumping straight to writing business logic.
+It is designed to help you kickstart your project, skipping the 'setting-up part' and jumping straight to writing business logic.
 
 Gorsk follows SOLID principles, with package design being inspired by Ben Johnson's [Standard Package Layout](https://medium.com/@benbjohnson/standard-package-layout-7cdbc8391fc1). The idea for building this project and its readme structure was inspired by [this](https://github.com/qiangxue/golang-restful-starter-kit).
 
@@ -75,7 +75,11 @@ Using Gorsk requires having Go 1.7 or above. Once you downloaded Gorsk (either u
 
 4. In cmd/migration/main.go set up psn variable and then run it (go run main.go). It will create all tables, and necessery data, with a new account username/password admin/admin.
 
-5. Run the app using:
+5. If you have downloaded the codebase for the first time, please run `make setup` to ensure that all dependencies are downloaded.
+
+6. If you make any changes to the APIs, and need to regenerate the swagger spec file, run `make generate-docs`
+
+7. Run the app using:
 
 ```bash
 go run cmd/api/server.go
@@ -96,7 +100,7 @@ You can log in as admin to the application by sending a post request to localhos
 
 ### Implementing CRUD of another table
 
-Let's save you have a table named 'cars' that handles employee's cars. To implement CRUD on this table you need:
+Let's say you have a table named 'cars' that handles employee's cars. To implement CRUD on this table you need:
 
 1. In project's root location create a new file named `car.go`. Inside put your entity (struct), and methods on the struct if you need them. Create interfaces for all platforms you have, for example, database, indexing, reporting etc. An example for this is UserDB interface in user.go
 
