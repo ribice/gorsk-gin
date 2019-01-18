@@ -5,7 +5,7 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/ribice/gorsk-gin)](https://goreportcard.com/report/github.com/ribice/gorsk-gin)
 [![Maintainability](https://api.codeclimate.com/v1/badges/c3cb09dbc0bc43186464/maintainability)](https://codeclimate.com/github/ribice/gorsk-gin/maintainability)
 
-Gorsk-Gin is a Golang starter kit for developing RESTful services, using Gin framework. I developed [Gorsk](https://github/com/ribice/gorsk) originally using Gin, but later moved it to Echo. This repository will be maintained with smaller changes done on Gorsk.
+Gorsk-Gin is a Golang starter kit for developing RESTful services, using Gin framework. I developed [Gorsk](https://github.com/ribice/gorsk) originally using Gin, but later moved it to Echo. This repository will be maintained with smaller changes done on Gorsk.
 
  It is designed to help you kickstart your project, skipping the 'setting-up part' and jumping straight to writing business logic.
 
